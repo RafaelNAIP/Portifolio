@@ -1,8 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+ /* Updated color palette for developer portfolio with cyan primary and orange accent */
+  --background: oklch(0.99 0.005 106.423); /* Light gray background */
+  --foreground: oklch(0.35 0.015 106.423); /* Dark gray text */
+  --card: oklch(1 0 0); /* White cards */
+  --card-foreground: oklch(0.35 0.015 106.423); /* Dark gray card text */
+  --popover: oklch(1 0 0); /* White popover */
+  --popover-foreground: oklch(0.35 0.015 106.423); /* Dark gray popover text */
+  --primary: oklch(0.55 0.15 198.38); /* Cyan primary */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.65 0.18 38.18); /* Orange secondary */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.97 0.005 106.423); /* Light gray muted */
+  --muted-foreground: oklch(0.35 0.015 106.423); /* Dark gray muted text */
+  --accent: oklch(0.65 0.18 38.18); /* Orange accent */
+  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.92 0.005 106.423); /* Light gray border */
+  --input: oklch(1 0 0); /* White input */
+  --ring: oklch(0.55 0.15 198.38 / 0.5); /* Cyan ring */
+  --chart-1: oklch(0.55 0.15 198.38);
+  --chart-2: oklch(0.65 0.18 38.18);
+  --chart-3: oklch(0.35 0.015 106.423);
+  --chart-4: oklch(0.6 0.2 45);
+  --chart-5: oklch(0.7 0.2 25);
+  --radius: 0.5rem;
+  --sidebar: oklch(1 0 0); /* White sidebar */
+  --sidebar-foreground: oklch(0.35 0.015 106.423); /* Dark gray sidebar text */
+  --sidebar-primary: oklch(0.55 0.15 198.38); /* Cyan sidebar primary */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White sidebar primary text */
+  --sidebar-accent: oklch(0.65 0.18 38.18); /* Orange sidebar accent */
+  --sidebar-accent-foreground: oklch(1 0 0); /* White sidebar accent text */
+  --sidebar-border: oklch(0.92 0.005 106.423); /* Light gray sidebar border */
+  --sidebar-ring: oklch(0.55 0.15 198.38 / 0.5); /* Cyan sidebar ring */
 }
 
 @theme inline {
@@ -22,5 +54,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
