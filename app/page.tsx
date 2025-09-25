@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ExperienceCards } from "@/components/experience-cards";
 import { ProjectCard } from "@/components/project-card";
 import { PortifolioHeader } from "@/components/portifolio-header";
@@ -15,21 +14,7 @@ export default function Home() {
           About Me
         </h2>
         {/* <div className="w-[90%] 2xl:w-[90%] xl:w-[80%] max-w-6xl min-h-[400px] lg:h-150 border border-gray-300 rounded-md bg-[#ffffff] bg-card shadow-sm"> */}
-        <div className="w-[80%] h-150 border border-gray-300 rounded-md bg-[#ffffff] bg-card shadow-sm">
-          <div className="size-full flex flex-col lg:flex-row">
-            <div className="w-full lg:w-[50%] flex items-center justify-center py-8 lg:py-0">
-              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20">
-                <Image
-                  src="/profile_picture.png"
-                  alt="Rafael Mesquita - Profile Photo"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <AboutSection />
-          </div>
-        </div>
+        <AboutSection />
         <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 font-[family-name:var(--font-playfair)] mt-16 lg:mt-20">
           Experience
         </h2>
