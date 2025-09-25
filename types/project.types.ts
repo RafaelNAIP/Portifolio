@@ -3,4 +3,6 @@ export interface ProjectCardType {
     title: string,
     description: string,
     tags: string[],
+    projectLink: string,
+    githubLink: string,
 }

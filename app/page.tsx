@@ -1,9 +1,5 @@
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import FileDownloadIcon from "@mui/icons-material/FileDownload";
 import Image from "next/image";
 import { ExperienceCards } from "@/components/experience-cards";
-import IosShareIcon from '@mui/icons-material/IosShare';
 import { ProjectCard } from "@/components/project-card";
 import { PortifolioHeader } from "@/components/portifolio-header";
 import { AboutSection } from "@/components/about-section";
@@ -14,14 +10,15 @@ export default function Home() {
     <div className="min-h-screen">
       <PortifolioHeader />
 
-      <div className="h-full w-full flex items-center mt-20 flex-col">
-        <h2 className="text-3xl font-bold text-center mb-12 font-[family-name:var(--font-playfair)]">
+      <div className="h-full w-full flex items-center mt-10 lg:mt-20 flex-col px-4 lg:px-0">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 font-[family-name:var(--font-playfair)]">
           About Me
         </h2>
+        {/* <div className="w-[90%] 2xl:w-[90%] xl:w-[80%] max-w-6xl min-h-[400px] lg:h-150 border border-gray-300 rounded-md bg-[#ffffff] bg-card shadow-sm"> */}
         <div className="w-[80%] h-150 border border-gray-300 rounded-md bg-[#ffffff] bg-card shadow-sm">
-          <div className="size-full flex">
-            <div className="w-[50%] flex items-center justify-center">
-              <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-primary/20">
+          <div className="size-full flex flex-col lg:flex-row">
+            <div className="w-full lg:w-[50%] flex items-center justify-center py-8 lg:py-0">
+              <div className="relative w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20">
                 <Image
                   src="/profile_picture.png"
                   alt="Rafael Mesquita - Profile Photo"
@@ -33,7 +30,7 @@ export default function Home() {
             <AboutSection />
           </div>
         </div>
-        <h2 className="text-3xl font-bold text-center mb-12 font-[family-name:var(--font-playfair)] mt-20">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 font-[family-name:var(--font-playfair)] mt-16 lg:mt-20">
           Experience
         </h2>
         <ExperienceCards isFirstCard={false} experienceInfo={{ 
@@ -58,20 +55,23 @@ export default function Home() {
           time: { start: '2020', end: '2021' }, 
           title: 'Fullstack Developer' 
           }} />
-        <h2 className="text-3xl font-bold text-center mb-12 font-[family-name:var(--font-playfair)] mt-30">
+        <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 lg:mb-12 font-[family-name:var(--font-playfair)] mt-20 lg:mt-30">
           Project
         </h2>
-        <div className="grid w-full h-150 grid-cols-3 pl-26">
+        <div className="grid w-full min-h-[400px] lg:h-150 grid-cols-1 lg:grid-cols-3 gap-6 px-4 lg:pl-26">
           <ProjectCard 
           cardProject={{ 
             title: 'React Tower Defense Game', 
             description: 'A game made 100% using React/Next with typescript, with a tower defense game feature and accessebility features including keyboard and reduced motion', 
             logo: '/tower_defense_preview.png', 
-            tags: ['React', 'NextJS', 'Jest', 'Vercel', 'Tailwind CSS'] }}  
+            tags: ['React', 'NextJS', 'Jest', 'Vercel', 'Tailwind CSS'], 
+            projectLink: '',
+            githubLink: '',
+          }} 
           />
         </div>
-        <footer className="border-t border-t-gray-300 h-25 w-full mt-30 flex items-center justify-center">
-          <p>© 2025 Rafael Mesquita. Built with Next.js and Tailwind CSS.</p>
+        <footer className="border-t border-t-gray-300 h-20 lg:h-25 w-full mt-20 lg:mt-30 flex items-center justify-center px-4">
+          <p className="text-sm lg:text-base text-center">© 2025 Rafael Mesquita. Built with Next.js and Tailwind CSS.</p>
         </footer>
       </div>
     </div>
