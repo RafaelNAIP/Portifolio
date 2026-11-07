@@ -9,17 +9,17 @@ export function ProjectCard({ cardProject }: { cardProject: ProjectCardType }) {
   const { title, description, logo, tags, projectLink, githubLink } = cardProject;
 
   const redirectToProject = () => {
-    window.location.href = "https://react-tower-defen-git-10449b-rafael-mesquitas-projects-f9d47783.vercel.app?_vercel_share=KNxCV3hb75unq7JYu0lHwoigtoyHt1LE";
+    if (projectLink) window.location.href = projectLink;
   }
 
   const redirectToGithub = () => {
-    window.location.href = "https://github.com/RafaelNAIP/React-Tower-Defense-Game";
+    if (githubLink) window.location.href = githubLink;
   }
 
   return (
     <div className="h-fit bg-white dark:bg-gray-800 w-full 2xl:w-[70%] 2xl:pb-0 lg:w-[90%] lg:pb-3 border border-gray-300 dark:border-gray-600 rounded-xl">
       <div className="relative w-full h-36 lg:h-48 overflow-hidden border-primary/20 mt-4 lg:mt-6">
-        <Image src={logo} alt="Project name" fill />
+        <Image src={logo} alt={title} fill />
       </div>
       <div className="relative w-full 2xl:h-70 overflow-hidden border-primary/20 mt-4 lg:mt-6 px-4 lg:px-7 pb-4 lg:pb-0">
         <p className="text-base lg:text-lg font-semibold text-gray-900 dark:text-white 2xl:mb-4 lg:mb-8 xl:mb-1 ">{title}</p>

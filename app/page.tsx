@@ -44,15 +44,25 @@ export default function Home() {
           Project
         </h2>
         <div className="grid w-full min-h-[400px] lg:h-150 grid-cols-1 lg:grid-cols-3 gap-6 px-4 lg:pl-26">
-          <ProjectCard 
-          cardProject={{ 
-            title: 'React Tower Defense Game', 
-            description: 'A game made 100% using React/Next with typescript, with a tower defense game feature and accessebility features including keyboard and reduced motion', 
-            logo: '/tower_defense_preview.png', 
-            tags: ['React', 'NextJS', 'Jest', 'Vercel', 'Tailwind CSS'], 
-            projectLink: '',
-            githubLink: '',
-          }} 
+          <ProjectCard
+          cardProject={{
+            title: 'React Tower Defense Game',
+            description: 'A game made 100% using React/Next with typescript, with a tower defense game feature and accessebility features including keyboard and reduced motion',
+            logo: '/tower_defense_preview.png',
+            tags: ['React', 'NextJS', 'Jest', 'Vercel', 'Tailwind CSS'],
+            projectLink: 'https://react-tower-defen-git-10449b-rafael-mesquitas-projects-f9d47783.vercel.app?_vercel_share=KNxCV3hb75unq7JYu0lHwoigtoyHt1LE',
+            githubLink: 'https://github.com/RafaelNAIP/React-Tower-Defense-Game',
+          }}
+          />
+          <ProjectCard
+          cardProject={{
+            title: 'B2B Multi-Tenant Monorepo',
+            description: 'A modular B2B multi-tenant platform (admin panel, client portal and a shared Design System) built with Next.js App Router, React Server Components, secure Server Actions with Zod validation and WCAG 2.1 AA accessibility',
+            logo: '/monorepo_preview.png',
+            tags: ['Next.js', 'RSC', 'Server Actions', 'Zod', 'TypeScript', 'Multi-tenant'],
+            projectLink: 'https://monorepo-b2-b-multi-tenant-qqcee6gca.vercel.app/demo/auth?_vercel_share=JpVBEQOxByWUU8nv6ztVIYnbRwRNupDn',
+            githubLink: 'https://github.com/RafaelNAIP/Monorepo-B2B-Multi-Tenant',
+          }}
           />
         </div>
         <footer className="border-t border-t-gray-300 h-20 lg:h-25 w-full mt-20 lg:mt-30 flex items-center justify-center px-4">
