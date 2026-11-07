@@ -60,8 +60,7 @@ export default function Home() {
             description: 'A modular B2B multi-tenant platform (admin panel, client portal and a shared Design System) built with Next.js App Router, React Server Components, secure Server Actions with Zod validation and WCAG 2.1 AA accessibility',
             logo: '/monorepo_preview.png',
             tags: ['Next.js', 'RSC', 'Server Actions', 'Zod', 'TypeScript', 'Multi-tenant'],
-            // TODO: swap for the Vercel share link (?_vercel_share=...) once provided
-            projectLink: 'https://monorepo-b2-b-multi-tenant-qqcee6gca.vercel.app/demo/auth',
+            projectLink: 'https://monorepo-b2-b-multi-tenant-qqcee6gca.vercel.app/demo/auth?_vercel_share=JpVBEQOxByWUU8nv6ztVIYnbRwRNupDn',
             githubLink: 'https://github.com/RafaelNAIP/Monorepo-B2B-Multi-Tenant',
           }}
           />
