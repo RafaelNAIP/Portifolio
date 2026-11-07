@@ -21,7 +21,7 @@ export function ProjectCard({ cardProject }: { cardProject: ProjectCardType }) {
       <div className="relative w-full h-36 lg:h-48 overflow-hidden border-primary/20 mt-4 lg:mt-6">
         <Image src={logo} alt={title} fill />
       </div>
-      <div className="relative w-full 2xl:h-70 overflow-hidden border-primary/20 mt-4 lg:mt-6 px-4 lg:px-7 pb-4 lg:pb-0">
+      <div className="relative w-full 2xl:min-h-70 border-primary/20 mt-4 lg:mt-6 px-4 lg:px-7 pb-5 lg:pb-6">
         <p className="text-base lg:text-lg font-semibold text-gray-900 dark:text-white 2xl:mb-4 lg:mb-8 xl:mb-1 ">{title}</p>
         <p className="text-sm lg:text-base text-gray-700 dark:text-gray-300">{description}</p>
         <div className="flex flex-wrap gap-2 2xl:mt-4 lg:mt-7 xl:mt-1">
